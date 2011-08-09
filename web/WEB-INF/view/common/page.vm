@@ -1,0 +1,63 @@
+<!--分页，要确认传输的参数包括：待 搜索条件的$url以及 $page -->
+#set($url = $url.replaceAll("&?currentPage=[0-9]+",""))
+#set( $prePage =  -1 + $page.currentPage )											          
+#set( $nextPage = $page.currentPage+1 )				
+#set( $thisPage = $!page.currentPage )
+#if(!$page.totalRecords)  #set( $thisPage = 0 ) #end
+
+			<table cellpadding="0" cellspacing="0" class="tbfoot">
+        <tr>
+          <td>&nbsp;共&nbsp;<span>$!page.totalRecords</span>&nbsp;条&nbsp;<span>$!thisPage/$!page.totalPages 页 &nbsp;</span></td>
+          <td align="right">
+            <table cellpadding="0" cellspacing="0">
+              <tr> 
+                <td align="right">
+                 #if( $page.canToFirst()) <a href="$url&currentPage=1">首页</a>  #else 首页 #end
+                 #if( $page.canToPre())  <a href="$url&currentPage=$prePage">上页</a>  #else 上页 #end 
+                 #if( $page.canToNext()) <a href="$url&currentPage=$nextPage">下页</a>#else 下页 #end  
+                 #if( $page.canToLast()) <a href="$url&currentPage=$page.totalPages">尾页</a> #else 尾页 #end
+                </td>
+				<form name="jump" method="post" action="$url" onSubmit="return checkUp()">
+                <td>&nbsp;&nbsp;跳转：</td>
+                <td><input name="currentPage" type="text" size="3" class="inputpage" onblur="setcurpage(this);">&nbsp;</td>
+                <td><input type="submit" name="Submit2" value="GO" class="inputpagebtn" ></td>
+				</form>
+              </tr>
+            </table>
+          </td>
+          <td align="right">&nbsp;</td>
+          <td align="center">&nbsp;</td>
+        </tr>
+      </table>
+		
+	  <script lanaguage="JavaScript">
+	  	function checkUp(){
+				var reg = /^\-?([1-9]\d*|0)\.\d*[1-9]$/; 
+				var jmp = document.getElementsByName('jump');
+				var jp;
+				if(jmp.length>1){
+					jp = jump[0];
+				}else{
+					jp = jump;
+				}
+				if(reg.test(jp.currentPage.value) ){
+						alert("还没有输入页数");
+						return false;
+				}
+				if(jp.currentPage.value =='' ){
+						alert("还没有输入页数");
+						return false;
+				}
+				if(!(jp.currentPage.value <= $page.totalPages) ){
+						alert("输入正确的页数");
+						return false;
+				}
+		}
+	  
+		function setcurpage(obj){
+		var jmp = document.getElementsByName('jump');
+		if(jmp.length>1){
+			document.jump[0].currentPage.value = obj.value;
+		}
+		}
+	  </script>

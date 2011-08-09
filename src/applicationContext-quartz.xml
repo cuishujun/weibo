@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+
+	<bean id="mainJob" class="com.cubead.datacenter.quartz.MainJob">
+		<property name="enable" value="${job.roi.main.enable}"></property>
+	</bean>
+
+	<bean id="roiCheckJob" class="com.cubead.datacenter.quartz.RoiCheckJob">
+		<property name="enable" value="${job.roi.check.enable}"></property>
+	</bean>
+	
+	<bean id="accountMainJob" class="com.cubead.datacenter.quartz.AccountMainJob">
+		<property name="enable" value="${job.account.main.enable}"></property>
+	</bean>
+
+	<bean id="accountCheckJob" class="com.cubead.datacenter.quartz.AccountCheckJob">
+		<property name="enable" value="${job.account.check.enable}"></property>
+	</bean>
+
+	<bean id="mainJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="mainJob" />
+		</property>
+		<property name="targetMethod">
+			<value>doIt</value>
+		</property>
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="roiCheckJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="roiCheckJob" />
+		</property>
+		<property name="targetMethod">
+			<value>doIt</value>
+		</property>
+		<property name="concurrent" value="false" />
+	</bean>
+	
+	<bean id="accountMainJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="accountMainJob" />
+		</property>
+		<property name="targetMethod">
+			<value>doIt</value>
+		</property>
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="accountCheckJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="accountCheckJob" />
+		</property>
+		<property name="targetMethod">
+			<value>doIt</value>
+		</property>
+		<property name="concurrent" value="false" />
+	</bean>
+ 
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="mainTrigger" />
+				<ref bean="roiCheckTrigger" />
+			 	<ref bean="accountMainTrigger" />
+				<ref bean="accountCheckTrigger" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="mainTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail">
+			<ref bean="mainJobDetail" />
+		</property>
+		<property name="cronExpression">
+			<value>0 0 3,15 * * ?</value>
+		</property>
+	</bean>
+
+	<bean id="roiCheckTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+		<!-- see the example of method invoking job above -->
+		<property name="jobDetail" ref="roiCheckJobDetail" />
+		<!-- 10 seconds -->
+		<property name="startDelay" value="10000" />
+		<!-- repeat every 50 seconds -->
+		<property name="repeatInterval" value="30000" />
+	</bean>
+	
+	<bean id="accountMainTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail">
+			<ref bean="accountMainJobDetail" />
+		</property>
+		<property name="cronExpression">
+			<value>0 0/30 * * * ?</value>
+		</property>
+	</bean>
+
+	<bean id="accountCheckTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+		<!-- see the example of method invoking job above -->
+		<property name="jobDetail" ref="accountCheckJobDetail" />
+		<!-- 10 seconds -->
+		<property name="startDelay" value="10000" />
+		<!-- repeat every 30 seconds -->
+		<property name="repeatInterval" value="30000" />
+	</bean>
+
+
+</beans>

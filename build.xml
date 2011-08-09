@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="dataCenter" basedir="." default="">
+	<property file="build.properties"/>
+	<property file="src/hibernate.properties"/>
+	<property environment="env"/>
+	<tstamp>
+		<format property="today" pattern="yyyy-MM-dd HH:mm"/>
+	</tstamp>
+
+	<!-- ========================================================= -->
+	<!-- can overwrite by build.properties -->
+	<!-- ========================================================= -->
+	<property name="project.name" value="cubeApi"/>
+	<property name="project.title" value="cubeApi"/>
+	<property name="project.version" value="2.0"/>
+	<property name="debug" value="true"/>
+
+
+	<!-- ========================================================= -->
+	<!-- Setting for directory properties -->
+	<!-- ========================================================= -->
+	<property name="lib.dir" location="${basedir}/lib"/>
+	<property name="xdoclet.lib.dir" location="${basedir}/lib/xdoclet"/>
+	<property name="build.dir" location="${basedir}/build"/>
+	<property name="src.dir" location="${basedir}/src"/>
+	<property name="build.class.dir" location="${build.dir}/classes"/>
+	<property name="web.dir" location="${basedir}/web"/>
+	<property name="spider.web.dir" location="${basedir}/spider/web"/>
+	<property name="example.dir" location="${basedir}/example"/>
+
+	<!-- ========================================================= -->
+	<!-- Setting for path -->
+	<!-- ========================================================= -->
+	<path id="classpath">
+		<fileset dir="${lib.dir}/servlet">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="${lib.dir}/junit">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="${web.dir}/WEB-INF/lib">
+			<include name="*.jar"/>
+		</fileset>
+		<pathelement location="${web.dir}/WEB-INF/classes"/>
+	</path>
+
+
+
+	<!-- ========================================================= -->
+	<!-- target segment -->
+	<!-- ========================================================= -->
+
+	<target name="init">
+		<mkdir dir="${web.dir}/WEB-INF/lib"/>
+		<mkdir dir="${web.dir}/WEB-INF/classes"/>
+		<!--
+			<copy todir="${web.dir}/WEB-INF/lib">
+				<fileset dir="${lib.dir}">
+					<include name="*.jar"/>
+				</fileset>
+			</copy>	
+			-->
+
+	</target>
+	<target name="compile" depends="init">
+		<mkdir dir="${web.dir}/WEB-INF/classes"/>
+		<!--
+		<javac encoding="UTF-8" classpathref="classpath" srcdir="paoding/src" 
+							destdir="${web.dir}/WEB-INF/classes" target="1.6" debug="${debug}" verbose="false"
+							deprecation="false" optimize="false" failonerror="true"/>-->
+		<javac encoding="UTF-8" classpathref="classpath" srcdir="${src.dir}" 
+			destdir="${web.dir}/WEB-INF/classes" target="1.6" debug="${debug}" verbose="false"
+			deprecation="false" optimize="false" failonerror="true"/>
+		<!--
+		<javac encoding="UTF-8" classpathref="classpath" srcdir="test" 
+					destdir="${web.dir}/WEB-INF/classes" target="1.5" debug="${debug}" verbose="false"
+					deprecation="false" optimize="false" failonerror="true"/>
+		-->
+		<copy todir="${web.dir}/WEB-INF/classes">
+			<fileset dir="${src.dir}" excludes="**/*.java"/>
+		</copy>
+
+	</target>
+
+
+
+	<target name="build" depends="clean,compile">
+
+	</target>
+
+	<target name="deploy-common" depends="build">
+		<mkdir dir="dist/temp/web"/>
+		<copy todir="dist/temp/web">
+			<fileset dir="${web.dir}">
+			</fileset>
+		</copy>
+
+
+	</target>
+
+
+	<target name="deploy-43" depends="deploy-common">
+		<copy file="dist/43/jobServer/hibernate.properties" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+		<copy file="dist/43/jobServer/application.properties" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+		<copy file="dist/43/jobServer/database_config.xml" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+		<copy file="dist/43/jobServer/log4j.properties" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+		<jar destfile="dist/jobServer-${DSTAMP}.war" basedir="dist/temp/web">
+		</jar>
+
+		<copy file="dist/43/searcher/hibernate.properties" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+		<copy file="dist/43/searcher/application.properties" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+		<copy file="dist/43/searcher/database_config.xml" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+		<copy file="dist/43/searcher/log4j.properties" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+		<jar destfile="dist/searcher-${DSTAMP}.war" basedir="dist/temp/web">		
+		</jar>
+
+	</target>
+	
+	<target name="deploy-100" depends="deploy-common">
+			<copy file="dist/100/jobServer/hibernate.properties" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+			<copy file="dist/100/jobServer/application.properties" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+			<copy file="dist/100/jobServer/database_config.xml" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+			<copy file="dist/100/jobServer/log4j.properties" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+			<jar destfile="dist/jobServer-100-${DSTAMP}.war" basedir="dist/temp/web">
+			</jar>
+
+			<copy file="dist/100/searcher/hibernate.properties" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+			<copy file="dist/100/searcher/application.properties" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+			<copy file="dist/100/searcher/database_config.xml" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+			<copy file="dist/100/searcher/log4j.properties" todir="dist/temp/web/WEB-INF/classes" overwrite="true" />
+			<jar destfile="dist/searcher-100-${DSTAMP}.war" basedir="dist/temp/web">		
+			</jar>
+
+		</target>
+
+
+
+	<target name="clean">
+		<delete dir="${web.dir}/WEB-INF/classes">
+		</delete>
+		<delete dir="dist/temp/web/WEB-INF/classes">
+		</delete>
+		<delete dir="dist/temp/web/WEB-INF/lib">
+		</delete>
+
+	</target>
+
+</project>

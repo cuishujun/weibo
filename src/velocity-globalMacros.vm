@@ -1,0 +1,2 @@
+## Evaluates other macros.
+#macro(eval $_macro)$_macro#end

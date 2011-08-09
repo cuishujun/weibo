@@ -1,0 +1,36 @@
+<config>
+
+ 
+<!-- 
+	<database_info>
+		<driver><![CDATA[org.gjt.mm.mysql.Driver]]></driver>
+		<url><![CDATA[jdbc:mysql://218.246.34.207:3306/cubead_product?useUnicode=true&characterEncoding=gbk&autoReconnect=true]]></url>
+		<user><![CDATA[cubead_app]]></user>
+		<password><![CDATA[cubead_app123]]></password>
+	</database_info>
+	
+	<database_info>
+		<driver><![CDATA[org.gjt.mm.mysql.Driver]]></driver>
+		<url><![CDATA[jdbc:mysql://192.168.1.100:3306/cubead_product?useUnicode=true&characterEncoding=gbk&autoReconnect=true]]></url>
+		<user><![CDATA[cubead]]></user>
+		<password><![CDATA[passw0rd]]></password>
+	</database_info>	
+-->
+	
+	
+	<database_info>
+		<driver><![CDATA[org.gjt.mm.mysql.Driver]]></driver>
+		<url><![CDATA[jdbc:mysql://localhost:3306/cubead_product?useUnicode=true&characterEncoding=gbk&autoReconnect=true]]></url>
+		<user><![CDATA[root]]></user>
+		<password><![CDATA[root]]></password>
+	</database_info>	
+	
+	<download_data_dir>
+	<path><![CDATA[D:/data_center/]]></path>
+	</download_data_dir>
+<!--		
+	<download_data_dir>
+	<path><![CDATA[/usr/]]></path>
+	</download_data_dir>
+-->	
+</config>

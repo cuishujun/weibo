@@ -1,0 +1,2376 @@
+<config>
+	<document_list>
+	
+		<document name="campaign">
+			<field_list>
+				<field name="id">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="tenantId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="searchEngine">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="campaign">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="campaign_NoAanalyzed">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>	
+				<field name="campaignId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>	
+				<field name="campaignPause">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="campaignStatus">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="campaignStatus_NoAanalyzed">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>	
+				<field name="campaignBudget">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="campaignRegionTarget">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="campaignRegionTarget_NoAanalyzed">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="campaignBiddingStrategy">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="campaignNegativeWords">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="campaignExactNegativeWords">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>												
+			</field_list>
+		</document>
+			<document name="adGroup">
+				<field_list>
+					<field name="id">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="tenantId">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="searchEngine">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="adGroup">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>YES</is_analyzed>
+					</field>
+					<field name="adGroup_NoAanalyzed">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>	
+					<field name="campaignId">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="adGroupId">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="adGroupMaxPrice">
+						<type point="2">number</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="adGroupPause">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>					
+					<field name="adGroupStatus">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>YES</is_analyzed>
+					</field>
+					<field name="adGroupStatus_NoAanalyzed">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+				    </field>
+					<field name="adGroupBiddingStrategy">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>					
+					<field name="adGroupNegativeWords">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>YES</is_analyzed>
+					</field>	
+					<field name="adGroupExactNegativeWords">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>YES</is_analyzed>
+					</field>					
+				</field_list>
+		</document> 
+			<document name="keyword">
+				<field_list>
+					<field name="id">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="tenantId">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="searchEngine">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="keyword">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>YES</is_analyzed>
+					</field>
+					<field name="keyword_NoAanalyzed">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>					
+					<field name="campaignId">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="adGroupId">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="keywordId">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>	
+					<field name="keywordMatchType">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>YES</is_analyzed>
+					</field>
+					<field name="keywordMatchType_NoAanalyzed">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+				    </field>
+					<field name="keywordLinkUrl">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>YES</is_analyzed>
+					</field>	
+					<field name="keywordPrice">
+						<type point="2">number</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="keywordPause">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>					
+					<field name="keywordStatus">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>YES</is_analyzed>
+					</field>
+					<field name="keywordStatus_NoAanalyzed">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+				    </field>					
+					
+					<field name="keywordBiddingStrategy">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>															
+				</field_list>
+		</document>		
+		
+		<document name="creative">
+				<field_list>
+					<field name="id">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="tenantId">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="searchEngine">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="campaignId">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="adGroupId">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="creativeId">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="headline">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>YES</is_analyzed>
+					</field>					
+					<field name="headline_NoAanalyzed">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+					<field name="description1">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>YES</is_analyzed>
+					</field>					
+					<field name="description2">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>YES</is_analyzed>
+					</field>					
+					<field name="displayUrl">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>YES</is_analyzed>
+					</field>
+					<field name="url">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>YES</is_analyzed>
+					</field>
+					<field name="creativePause">
+						<type>string</type>
+						<boost>1</boost>
+						<is_store>YES</is_store>
+						<is_analyzed>NO</is_analyzed>
+					</field>
+											
+				</field_list>
+		</document>	
+		
+		<document name="roi">
+			<field_list>
+				<field name="id">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="dataType">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="tenantId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="searchEngine">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="networkType">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="statDate">
+					<type>date</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="campaign">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="campaign_NoAanalyzed">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="adGroup">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="adGroup_NoAanalyzed">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="keyword">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="keyword_NoAanalyzed">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="campaignId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="adGroupId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="keywordId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="cost">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="avgCpc">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="clicks">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="impressions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="ctr">
+					<type point="4">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="cpm">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="avgPosition">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="bounces">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="visits">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goalCompletionsAll">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goalValueAll">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="newVisits">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="timeOnSite">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+					<field name="exits">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="pageViews">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="transactionRevenue">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="medium">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="transactions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="bounceRate">
+					<type point="4">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="avgVisitTime">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goalValueAllRoiRate">
+					<type point="4">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="transactionRevenueRoiRate">
+					<type point="4">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="visitOffsetRate">
+					<type point="4">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="offlineTurnOverNum">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				
+				<field name="goal1Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal2Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal3Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal4Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal5Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal6Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal7Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal8Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal9Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal10Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>	
+				<field name="goal11Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal12Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal13Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal14Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal15Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal16Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal17Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal18Completions">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal19Completions">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal20Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="offlineRevenue">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>		
+				<field name="costPerConversion">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>					
+				<field name="offlineRevenueRoiRate">
+					<type point="4">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>	
+				<field name="revenue">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="conversions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>	
+				<field name="roiRate">
+					<type point="4">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+																														
+			</field_list>
+		</document>
+		
+		<document name="ga_search_word">
+			<field_list>
+				<field name="id">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="tenantId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="searchEngine">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="statDate">
+					<type>date</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="campaign">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="campaign_NoAanalyzed">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="adGroup">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="adGroup_NoAanalyzed">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="keyword">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="keyword_NoAanalyzed">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="searchWord">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="bsWord">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="userDefinedValue">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="goalCompletionsAll">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="transactions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="visits">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="transactionRevenue">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goalValueAll">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="medium">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal1Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal2Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal3Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal4Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal5Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal6Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal7Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal8Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal9Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal10Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>	
+				<field name="goal11Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal12Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal13Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal14Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal15Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal16Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal17Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal18Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>				
+				<field name="goal19Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="goal20Completions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				
+				<field name="goal1Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal2Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal3Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal4Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal5Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal6Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal7Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal8Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal9Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal10Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal11Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal12Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal13Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal14Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal15Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal16Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal17Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal18Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal19Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+				<field name="goal20Value">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>								
+																														
+			</field_list>
+		</document>
+		
+		<document name="baidu_search_word">
+			<field_list>
+				<field name="id">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="tenantId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="searchEngine">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="statDate">
+					<type>date</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="accountId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="accountName">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="campaign">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="campaignId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="adGroup">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="adGroupId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="ideaId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="ideaTitle">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				
+				<field name="ideaDescribe1">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				
+				<field name="ideaDescribe2">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				
+				<field name="url">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				
+				<field name="searchWord">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				
+				<field name="keyword">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				
+				<field name="keywordId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="impressions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="clicks">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>			
+							
+																														
+			</field_list>
+		</document>
+		
+		
+		<document name="google_search_word">
+			<field_list>
+				<field name="id">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="tenantId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="searchEngine">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="searchTerm">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				
+				<field name="adGroupId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="adGroup">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				
+				<field name="keywordId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="adGroupState">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				
+				<field name="network">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				
+				<field name="NetworkWithSearchPartners">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="avgCpc">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="avgCpm">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="avgPosition">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="campaignId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="campaign">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="campaignState">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="clicks">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="convRateOnePerClick">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="convRateManyPerClick">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="convOnePerClick">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="convManyPerClick">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="totalConvValue">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="cost">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="costDivideConvOnePerClick">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="costDivideConvManyPerClick">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				
+				<field name="destinationUrl">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="ctr">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="day">
+					<type>date</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="dayOfWeek">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="impressions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="matchType">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="month">
+					<type>date</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="monthOfYear">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="quarter">
+					<type>date</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="valueDivideConvOnePerClick">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="valueDivideConvManyPerClick">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>	
+				
+				<field name="ViewThroughConv">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="week">
+					<type>date</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>		
+					
+				<field name="year">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>																									
+			</field_list>
+		</document>
+		
+		<!--  
+		<document name="baidu_create">
+			<field_list>
+				<field name="id">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="tenantId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="searchEngine">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="statDate">
+					<type>date</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="accountId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="accountName">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="campaign">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="campaignId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="adGroup">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="adGroupId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="createId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="createTitle">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				
+				
+				<field name="url">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="spreadType">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="cost">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="cpc">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="clicks">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="ctr">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="cpm">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="avgPosition">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="impressions">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				
+							
+																														
+			</field_list>
+		</document>
+		
+		
+		<document name="google_create">
+			<field_list>
+				<field name="id">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="tenantId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="searchEngine">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="day">
+					<type>date</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				
+				<field name="adGroup">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>YES</is_analyzed>
+				</field>
+				<field name="adGroupId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="adGroupState">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="network">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="NetworkWithSearchPartners">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="adType">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="avgCpc">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="avgCpm">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="avgPosition">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="campaignId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="campaign">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="campaignState">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="clicks">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="clickType">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="convRateOnePerClick">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="convRateManyPerClick">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="convOnePerClick">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="convManyPerClick">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="totalConvValue">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="cost">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="costDivideConvOnePerClick">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="costDivideConvManyPerClick">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="destinationUrl">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="ctr">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="dayOfWeek">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="descriptionLine1">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="device">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="displayUrl">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="ad">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="adId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="imageAdName">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="impressions">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="isNegative">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="keywordId">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="month">
+					<type>date</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="monthOfYear">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="quarter">
+					<type>date</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="adState">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="valueDivideConvOnePerClick">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				<field name="valueDivideConvManyPerClick">
+					<type point="2">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="ViewThroughConv">
+					<type point="0">number</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="week">
+					<type>date</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+				
+				<field name="year">
+					<type>string</type>
+					<boost>1</boost>
+					<is_store>YES</is_store>
+					<is_analyzed>NO</is_analyzed>
+				</field>
+			</field_list>
+		</document>
+		-->
+		
+<document name="searchword_roi">
+			<field_list>
+				<field name="id"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="tenantId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="statDate"><type>date</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="searchEngine"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="medium"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="networkType"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="campaign"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>YES</is_analyzed></field>
+				<field name="campaign_NoAanalyzed"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="adGroup"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>YES</is_analyzed></field>
+				<field name="adGroup_NoAanalyzed"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="keyword"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>YES</is_analyzed></field>
+				<field name="keyword_NoAanalyzed"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="searchTerm"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>YES</is_analyzed></field>
+				<field name="searchTerm_NoAanalyzed"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="campaignId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="adGroupId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="keywordId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="cost"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="clicks"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="impressions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgCpc"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="ctr"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="cpm"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgPosition"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="visits"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="bounces"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgVisitTime"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="pageViews"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="visitOffsetRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="newVisits"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="bounceRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="timeOnSite"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="conversions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="costPerConversion"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="revenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goalCompletionsAll"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goalValueAll"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="transactions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="transactionRevenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="roiRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal1Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal2Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal3Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal4Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal5Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal6Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal7Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal8Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal9Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal10Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>	
+				<field name="goal11Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal12Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal13Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal14Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal15Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal16Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal17Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal18Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal19Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal20Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+
+<!--
+				<field name="exits"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goalValueAllRoiRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="transactionRevenueRoiRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="offlineTurnOverNum"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="offlineRevenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>		
+				<field name="offlineRevenueRoiRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>	
+								
+	-->							
+																														
+			</field_list>
+		</document>
+		
+		<document name="creative_roi">
+			<field_list>
+				<field name="id"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="tenantId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="statDate"><type>date</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="searchEngine"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="medium"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="networkType"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="campaign"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>YES</is_analyzed></field>
+				<field name="campaign_NoAanalyzed"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="adGroup"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>YES</is_analyzed></field>
+				<field name="adGroup_NoAanalyzed"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				
+				<field name="headline"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>YES</is_analyzed></field>
+				<field name="headline_NoAanalyzed"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+
+				<field name="description1"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>YES</is_analyzed></field>
+				<field name="description2"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>YES</is_analyzed></field>
+				<field name="displayUrl"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>YES</is_analyzed></field>
+
+				<field name="campaignId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="adGroupId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="creativeId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				
+				<field name="cost"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="clicks"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="impressions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgCpc"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="ctr"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="cpm"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgPosition"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="visits"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="bounces"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgVisitTime"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="pageViews"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="visitOffsetRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="newVisits"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="bounceRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="timeOnSite"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="conversions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="costPerConversion"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="revenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goalCompletionsAll"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goalValueAll"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="transactions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="transactionRevenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="roiRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal1Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal2Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal3Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal4Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal5Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal6Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal7Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal8Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal9Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal10Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>	
+				<field name="goal11Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal12Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal13Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal14Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal15Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal16Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal17Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal18Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal19Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal20Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+
+						
+																														
+			</field_list>
+		</document>
+		
+		<document name="account_roi">
+			<field_list>
+				<field name="id"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="tenantId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="statDate"><type>date</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="searchEngine"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="medium"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="networkType"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="cost"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="clicks"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="impressions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgCpc"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="ctr"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="cpm"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgPosition"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="visits"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="bounces"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgVisitTime"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="pageViews"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="visitOffsetRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="newVisits"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="bounceRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="timeOnSite"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="conversions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="costPerConversion"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="revenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goalCompletionsAll"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goalValueAll"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="transactions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="transactionRevenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="roiRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal1Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal2Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal3Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal4Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal5Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal6Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal7Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal8Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal9Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal10Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>	
+				<field name="goal11Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal12Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal13Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal14Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal15Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal16Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal17Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal18Completions"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal19Completions"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal20Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>																												
+			
+				<field name="offlineTurnOverNum"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="offlineRevenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>		
+				<field name="offlineRevenueRoiRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>	
+				<field name="reserved1"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="reserved2"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="reserved3"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="totalPosition"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+		
+			</field_list>
+		</document>
+		
+		<document name="plan_roi">
+			<field_list>
+				<field name="id"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="tenantId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="statDate"><type>date</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="searchEngine"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="medium"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="networkType"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				
+				<field name="campaign"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>YES</is_analyzed></field>
+				<field name="campaign_NoAanalyzed"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="campaignId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				
+				<field name="cost"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="clicks"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="impressions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgCpc"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="ctr"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="cpm"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgPosition"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="visits"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="bounces"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgVisitTime"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="pageViews"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="visitOffsetRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="newVisits"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="bounceRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="timeOnSite"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="conversions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="costPerConversion"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="revenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goalCompletionsAll"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goalValueAll"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="transactions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="transactionRevenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="roiRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal1Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal2Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal3Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal4Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal5Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal6Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal7Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal8Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal9Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal10Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>	
+				<field name="goal11Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal12Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal13Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal14Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal15Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal16Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal17Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal18Completions"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal19Completions"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal20Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>																												
+			
+				<field name="offlineTurnOverNum"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="offlineRevenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>		
+				<field name="offlineRevenueRoiRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>	
+				<field name="reserved1"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="reserved2"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="reserved3"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="totalPosition"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+		
+			</field_list>
+		</document>
+		
+		<document name="unit_roi">
+			<field_list>
+				<field name="id"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="tenantId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="statDate"><type>date</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="searchEngine"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="medium"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="networkType"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				
+				<field name="campaign"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>YES</is_analyzed></field>
+				<field name="campaign_NoAanalyzed"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="adGroup"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>YES</is_analyzed></field>
+				<field name="adGroup_NoAanalyzed"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				
+				<field name="campaignId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="adGroupId"><type>string</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				
+				<field name="cost"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="clicks"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="impressions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgCpc"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="ctr"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="cpm"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgPosition"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="visits"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="bounces"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="avgVisitTime"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="pageViews"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="visitOffsetRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="newVisits"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="bounceRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="timeOnSite"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="conversions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="costPerConversion"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="revenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goalCompletionsAll"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goalValueAll"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="transactions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="transactionRevenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="roiRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal1Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal2Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal3Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal4Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal5Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal6Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal7Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal8Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal9Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal10Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>	
+				<field name="goal11Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal12Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal13Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal14Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal15Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal16Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal17Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal18Completions"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>				
+				<field name="goal19Completions"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="goal20Completions"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>																												
+			
+				<field name="offlineTurnOverNum"><type point="0">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="offlineRevenue"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>		
+				<field name="offlineRevenueRoiRate"><type point="4">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>	
+				<field name="reserved1"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="reserved2"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="reserved3"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+				<field name="totalPosition"><type point="2">number</type><boost>1</boost><is_store>YES</is_store><is_analyzed>NO</is_analyzed></field>
+		
+			</field_list>
+		</document>
+	</document_list>
+</config>

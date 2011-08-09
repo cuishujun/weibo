@@ -1,0 +1,324 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:applicationContext-*.xml </param-value>
+	</context-param>
+	
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>*.htm</url-pattern>
+	</filter-mapping>
+	
+	<!-- 
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	-->
+	
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>org.springframework.web.util.WebAppRootListener</listener-class>
+	</listener>
+
+
+	<!-- <listener> <listener-class>com.snapshot.quartz.QuartzListener</listener-class> 
+		</listener> -->
+
+	<!-- <servlet> <servlet-name>RunQueueManageServlet</servlet-name> <servlet-class>com.snapshot.queue.servlet.RunQueueManageServlet</servlet-class> 
+		<load-on-startup>1</load-on-startup> </servlet> -->
+
+	<servlet>
+		<servlet-name>actionDispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath*:*-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>IniServlet</servlet-name>
+		<servlet-class>com.snapshot.index.config.IniServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>QueryByIdServlet</servlet-name>
+		<servlet-class>com.snapshot.query.servlet.QueryByIdServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>QueryIndexServlet</servlet-name>
+		<servlet-class>com.snapshot.query.servlet.QueryIndexServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>GrouByServlet</servlet-name>
+		<servlet-class>com.snapshot.query.servlet.GrouByServlet</servlet-class>
+	</servlet>
+
+
+
+
+	<servlet>
+		<servlet-name>isKeywordValueExists</servlet-name>
+		<servlet-class>com.snapshot.server.servlet.keyword.isKeywordValueExists</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>getMapByKeywordIds</servlet-name>
+		<servlet-class>com.snapshot.server.servlet.keyword.getMapByKeywordIds</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>getMapByKeywordIdAndAdGroupId</servlet-name>
+		<servlet-class>com.snapshot.server.servlet.keyword.getMapByKeywordIdAndAdGroupId</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>preUploadKeyword</servlet-name>
+		<servlet-class>com.snapshot.server.servlet.keyword.preUploadKeyword</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>KeywordsGroupServlet</servlet-name>
+		<servlet-class>com.snapshot.server.servlet.keyword.KeywordsGroupServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>KeywordQuickSearchServlet</servlet-name>
+		<servlet-class>com.snapshot.server.servlet.keyword.KeywordQuickSearchServlet</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>RoiReportServlet</servlet-name>
+		<servlet-class>com.snapshot.getdata.servlet.RoiReportServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>SearchWordReportServlet</servlet-name>
+		<servlet-class>com.snapshot.getdata.servlet.SearchWordReportServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>BaiduUpload</servlet-name>
+		<servlet-class>com.snapshot.server.servlet.upload.BaiduUpload</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>GoogleUpload</servlet-name>
+		<servlet-class>com.snapshot.server.servlet.upload.GoogleUpload</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>CreativeReportServlet</servlet-name>
+		<servlet-class>com.snapshot.getdata.servlet.CreativeReportServlet</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>keywordSplit</servlet-name>
+		<servlet-class>com.snapshot.server.servlet.keyword.keywordSplit</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>GetGARegionReportServlet</servlet-name>
+		<servlet-class>com.snapshot.getdata.servlet.GetGARegionReportServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>GetGAHourReportServlet</servlet-name>
+		<servlet-class>com.snapshot.getdata.servlet.GetGAHourReportServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>WordlistDownloadServlet</servlet-name>
+		<servlet-class>com.snapshot.server.servlet.wordlist.AccountDownloadServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>QuerySearchwordServlet</servlet-name>
+		<servlet-class>com.snapshot.server.servlet.searchword.QuerySearchwordServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetGARegionReportServlet</servlet-name>
+		<url-pattern>/servlet/GetGARegionReportServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>QuerySearchwordServlet</servlet-name>
+		<url-pattern>/servlet/QuerySearchwordServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GetGAHourReportServlet</servlet-name>
+		<url-pattern>/servlet/GetGAHourReportServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>QueryByIdServlet</servlet-name>
+		<url-pattern>/queryById</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>QueryIndexServlet</servlet-name>
+		<url-pattern>/queryIndex</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GrouByServlet</servlet-name>
+		<url-pattern>/groupIndex</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>WordlistDownloadServlet</servlet-name>
+		<url-pattern>/wholeAccountDownload</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>isKeywordValueExists</servlet-name>
+		<url-pattern>/server/keyword/isKeywordValueExists</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>getMapByKeywordIds</servlet-name>
+		<url-pattern>/server/keyword/getMapByKeywordIds</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>getMapByKeywordIdAndAdGroupId</servlet-name>
+		<url-pattern>/server/keyword/getMapByKeywordIdAndAdGroupId</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>preUploadKeyword</servlet-name>
+		<url-pattern>/server/keyword/preUploadKeyword</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>KeywordsGroupServlet</servlet-name>
+		<url-pattern>/server/keyword/keywordGroup</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>KeywordQuickSearchServlet</servlet-name>
+		<url-pattern>/server/keyword/keywordQuickSearch</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ChangedDataServlet</servlet-name>
+		<servlet-class>com.snapshot.getdata.servlet.ChangedDataServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ChangedDataServlet</servlet-name>
+		<url-pattern>/servlet/ChangedDataServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>InitDataServlet</servlet-name>
+		<servlet-class>com.snapshot.getdata.servlet.InitDataServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InitDataServlet</servlet-name>
+		<url-pattern>/servlet/InitDataServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>QueryRoiServlet</servlet-name>
+		<servlet-class>com.snapshot.server.servlet.roi.QueryRoiServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>QueryRoiServlet</servlet-name>
+		<url-pattern>/servlet/QueryRoiServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RoiReportServlet</servlet-name>
+		<url-pattern>/servlet/RoiReportServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SearchWordReportServlet</servlet-name>
+		<url-pattern>/servlet/SearchWordReportServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>BaiduUpload</servlet-name>
+		<url-pattern>/server/upload/baiduUpload</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GoogleUpload</servlet-name>
+		<url-pattern>/server/upload/googleUpload</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CreativeReportServlet</servlet-name>
+		<url-pattern>/server/CreativeReportServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>keywordSplit</servlet-name>
+		<url-pattern>/server/keyword/keywordSplit</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>actionDispatcher</servlet-name>
+		<url-pattern>*.htm</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>actionDispatcher</servlet-name>
+		<url-pattern>*.json</url-pattern>
+	</servlet-mapping>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>
+				Restricted Area
+			</web-resource-name>
+			<url-pattern>/monitor/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>dcadmin</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>datacenter admin realm</realm-name>
+	</login-config>
+	
+	<security-role>
+    	<description>datacenter admin</description>
+    	<role-name>dcadmin</role-name>
+  	</security-role>
+</web-app>

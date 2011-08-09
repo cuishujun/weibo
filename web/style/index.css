@@ -1,0 +1,40 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;padding:0;font-size:16px;font-family:Tahoma,Helvetica,Arial,'ËÎÌå',sans-serif;color:#606060;}
+
+fieldset,img { border:0;}
+address,caption,cite,code,dfn,em,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+abbr,acronym { border:0;}
+h1{font:bold 20px/2 "Î¢ÈíÑÅºÚ",Arial;background:#F0F7FD;padding:15px 25px;border-bottom:solid 3px #D5EAF7;text-shadow:#FFF 1px 1px 1px;}
+h1 span{font:bold 14px/2 "Î¢ÈíÑÅºÚ",Arial;}
+h1 span em{color:#FF6633;}
+.content{}
+body{background:#FAFAFA;}
+a:link{color:#005C9C;}
+a:visited{color:#005C9C;text-decoration:none;}
+a:hover{color:#FF6D06;}
+.pagenav{margin:10px;height:25px;line-height:25px;background:#F7F7F7;border-bottom:solid 1px #DEDEDE;padding:0 5px;font-size:14px;}
+.main{margin:10px;}
+.table,.table td{border-collapse:collapse;border:solid 1px #BDBDBD;line-height:35px;}
+.table td{padding:0 6px;}
+h2{color:#FFFFFF;font-size:14px;}
+.bg6b{background:#6B6B6B;}
+.bg6e{background:#E6E6E6;}
+.f14{font-size:14px;}
+.footer{line-height:25px;text-align:center;margin-top:30px;}
+.pagenav a span{color:#666666;text-decoration:none;}
+.manu {height:30px;line-height:30px;text-align:right;background:#F4F4F4;}
+.manu a {padding:2px 5px;margin: 2px; color: #036cb4;TEXT-DECORaTION: none;background:#FFF;border:solid 1px #BDBDBD;}
+.manu a:hover {border:solid 1px #666; color: #666;background:#FFF;}
+.manu a:active {color: #666;background:#FFF;border:solid 1px #666;}
+.manu .current {padding:2px 5px;font-weight: bold;margin:2px;color: #fff;background-color: #036cb4;border:solid 1px #036cb4;}
+.manu .disabled {margin: 2px; color: #ddd;background:#FFF;border:solid 1px #BDBDBD;padding:2px 5px;}
+.tit{font-size:14px;color:#FFFFFF;font-weight:bold;}
+td.smt{height:23px;line-height:23px;background:#EDEDED;}
+.datewrap{width:100%;overflow-x:auto;}
+h3{line-height:25px;height:25px;}
+.check{height:50px;margin-top:-10px;background:#FFF;padding:10px;}
+.check label{margin-right:15px;}
+input.sipt{border:solid 1px #999;height:17px;padding:3px 5px 2px 5px;}
+input,select{vertical-align:middle;}
+span.cnt{text-align:center;line-height:30px;display:block;margin-bottom:10px;}
